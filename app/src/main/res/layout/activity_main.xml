@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_hs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:gravity="center_vertical"
+        android:text="保存"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.972"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_set1" />
+
+    <EditText
+        android:id="@+id/txtCheckOffset"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:text="0"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_hs"
+        app:layout_constraintTop_toBottomOf="@+id/txtIdentify1" />
+
+    <EditText
+        android:id="@+id/txtchecktime"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="请输入上次核酸时间"
+        app:layout_constraintEnd_toStartOf="@+id/txtCheckOffset"
+        app:layout_constraintTop_toBottomOf="@+id/txtIdentify1" />
+
+    <Button
+        android:id="@+id/btn_savexy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="20dp"
+        android:text="保存坐标"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_qr_height" />
+
+    <EditText
+        android:id="@+id/et_qr_width"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/iv_qr"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_qr_x"
+        app:layout_constraintTop_toBottomOf="@+id/et_qr_y" />
+
+    <TextView
+        android:id="@+id/tv_qr_x4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="截图高度"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/et_qr_height" />
+
+    <EditText
+        android:id="@+id/et_qr_height"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/iv_qr"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_qr_x"
+        app:layout_constraintTop_toBottomOf="@+id/et_qr_width" />
+
+    <TextView
+        android:id="@+id/tv_qr_width"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="截图宽度"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/et_qr_width" />
+
+    <EditText
+        android:id="@+id/et_qr_y"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/iv_qr"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_qr_x"
+        app:layout_constraintTop_toBottomOf="@+id/et_qr_x" />
+
+    <TextView
+        android:id="@+id/tv_qr_y"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:text="坐标y"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/et_qr_y" />
+
+    <Button
+        android:id="@+id/btn_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="80dp"
+        android:text="二维码"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_qr_height" />
+
+    <Button
+        android:id="@+id/btn_show1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center_vertical"
+        android:text="显示"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.978"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_set1" />
+
+    <EditText
+        android:id="@+id/txtName1"
+        android:layout_width="282dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="请输入姓名"
+        app:layout_constraintTop_toBottomOf="@+id/txtIdentify0"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <EditText
+        android:id="@+id/txtIdentify1"
+        android:layout_width="280dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="请输入身份证号"
+        app:layout_constraintTop_toBottomOf="@+id/txtName1"
+        tools:layout_editor_absoluteX="34dp" />
+
+    <Button
+        android:id="@+id/btn_set1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="保存信息"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.978"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_show0" />
+
+    <EditText
+        android:id="@+id/txtIdentify0"
+        android:layout_width="279dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="请输入身份证号"
+        app:layout_constraintTop_toBottomOf="@+id/txtName0"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <Button
+        android:id="@+id/btn_show0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:text="显示"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.978"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_set0" />
+
+    <Button
+        android:id="@+id/btn_set0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="保存信息"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.978"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_select" />
+
+    <EditText
+        android:id="@+id/txtName0"
+        android:layout_width="279dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="请输入姓名"
+        app:layout_constraintTop_toBottomOf="@+id/btn_select"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <ImageView
+        android:id="@+id/iv_qr"
+        android:layout_width="159dp"
+        android:layout_height="138dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/golden" />
+
+    <EditText
+        android:id="@+id/et_qr_x"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/iv_qr"
+        app:layout_constraintStart_toEndOf="@+id/tv_qr_x"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_qr_x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="4dp"
+        android:text="坐标x"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

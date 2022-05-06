@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgimg"
+    tools:context=".FullScreenActivity">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <Space
+            android:id="@+id/space_top"
+            android:layout_width="match_parent"
+            android:layout_height="65dp" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:height="30dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="10月21日 12:23:54"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <com.example.fullscreen.MyTextView
+            android:id="@+id/tv_time5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="18dp"
+            android:gravity="clip_vertical|center_horizontal|center_vertical"
+            android:text="健康状况核验未见异常（绿码）"
+            android:textColor="@color/black"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/image_golden"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            app:srcCompat="@drawable/golden"
+            tools:ignore="MissingClass" />
+
+        <TextView
+            android:id="@+id/tv_godenword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="20dp"
+            android:gravity="clip_vertical|center_horizontal|center_vertical"
+            android:text="已接种新冠疫苗"
+            android:textColor="#C7B38E"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="20dp"
+            android:gravity="clip_vertical|center_horizontal|center_vertical"
+            android:text="闫星海"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_Identity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="20dp"
+            android:gravity="clip_vertical|center_horizontal|center_vertical"
+            android:text="37232819781130181X"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="normal"
+            android:visibility="visible" />
+
+        <Space
+            android:id="@+id/space_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="90dp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_checktime"
+                android:layout_width="197dp"
+                android:layout_height="36dp"
+                android:height="30dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="阴性 2022-05-04 12:23:54"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                android:textStyle="normal"
+                android:visibility="visible" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
